@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Education;
 use App\Models\Experience;
+use App\Models\Interest;
 use App\Models\Message;
 use App\Models\SkillCategory;
 use App\Models\User;
@@ -25,6 +26,7 @@ class DatabaseSeeder extends Seeder
         Experience::factory(10)->create();
         SkillFactory::factory(10)->create();
         SkillCategory::factory(10)->create();
+        Interest::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
