@@ -8,6 +8,7 @@ use App\Models\Education;
 use App\Models\Experience;
 use App\Models\Message;
 use App\Models\User;
+use Database\Factories\SkillFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
         Message::factory(10)->create();
         Education::factory(10)->create();
         Experience::factory(10)->create();
+        SkillFactory::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
