@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:ital,wght@0,100;0,300;0,600;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.h1-footer, .p-footer, .btn-footer{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+.h1-footer{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.p-footer{
+    margin: 10px auto;
+    margin-bottom: 20px;
+
+}
+
+.footer-custom{
+    margin: 50px 0 0 0;
+}
+
+.row-text{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
