@@ -1,21 +1,13 @@
 <template>
-    <div class="container">
+    <div class="container" id="Skills">
         <div class="skills">
-            <p class="p" >what can i do?</p>
+            <p class="p">what can i do?</p>
             <h1>My Skills</h1>
 
-            <swiper
-                :navigation="true"
-                :slidesPerView="'auto'"
-                :centeredSlides="true"
-                :loop="true"
-                :spaceBetween="40"
+            <swiper :navigation="true" :slidesPerView="'auto'" :centeredSlides="true" :loop="true" :spaceBetween="40"
                 :pagination="{
-                    clickable: true,
-                }"
-                :modules="modules"
-                class="mySwiper"
-            >
+                clickable: true,
+            }" :modules="modules" class="mySwiper">
                 <swiper-slide>
                     <div class="img-box">
                         <span class="fa-solid fa-user-graduate"></span>
