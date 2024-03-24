@@ -9,10 +9,10 @@ export default {
 </script>
 
 <template>
-    <div class="container" id="project">
+    <div class="container" id="Project">
         <div class="projects">
 
-            <p class="p" >what dad i make?</p>
+            <p class="p">what dad i make?</p>
             <h1>My Latest Projects</h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 projects-content">
                 <div class="col">
@@ -36,7 +36,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col">
                     <div class="">
                         <div class="card-body p-0">
