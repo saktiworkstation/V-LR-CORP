@@ -14,7 +14,7 @@ export default{
 </script>
 
 <template>
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" id="contact">
   <div class="footer-custom">
     <footer class="py-5  ">
     <div class="row row-text">

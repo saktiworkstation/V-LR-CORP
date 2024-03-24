@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" id="skills">
         <div class="skills">
             <p class="p" >what can i do?</p>
             <h1>My Skills</h1>
@@ -75,8 +75,8 @@
                 </swiper-slide>
                 <swiper-slide>
                     <div class="img-box">
-                        <span class="fa-brands fa-react"></span>
-                        <h3>React</h3>
+                        <span class="fa-brands fa-vuejs"></span>
+                        <h3>Vue</h3>
                     </div>
                     <div class="text-box">
                         <p>

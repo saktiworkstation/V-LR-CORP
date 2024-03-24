@@ -111,3 +111,7 @@
         display: none;
     }    
 }
+
+.modal-custom{
+    width: 800px;
+}
