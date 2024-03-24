@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('company');
             $table->string('durations');
             $table->string('field');
-            $table->int('order')->unique();
+            $table->integer('order')->unique();
             $table->timestamps();
         });
     }
