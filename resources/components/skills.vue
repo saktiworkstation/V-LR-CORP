@@ -23,7 +23,7 @@
                     </div>
                 </swiper-slide>
 
-                <swiper-slide>
+                <!-- <swiper-slide>
                     <div class="img-box">
                         <span class="fa-brands fa-html5"></span>
                         <h3>Html</h3>
@@ -78,7 +78,7 @@
                             involving singing.
                         </p>
                     </div>
-                </swiper-slide>
+                </swiper-slide> -->
             </swiper>
         </div>
     </div>
