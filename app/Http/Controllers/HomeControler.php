@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class HomeControler extends Controller
 {
-    public function index(){
-        return view('index', [
-            'skills' => Skill::all(),
-        ]);
+    public function index()
+    {
+        $skills = Skill::all();
+        return view('index', compact('skills'));
     }
 }

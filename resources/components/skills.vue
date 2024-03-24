@@ -8,18 +8,13 @@
                 :pagination="{
                 clickable: true,
             }" :modules="modules" class="mySwiper">
-                <swiper-slide>
+                <swiper-slide v-for="skill in skills" :key="skill.id">
                     <div class="img-box">
                         <span class="fa-solid fa-user-graduate"></span>
-                        <h3>Base Education</h3>
+                        <h3>{{ skill.skill_name }}</h3>
                     </div>
                     <div class="text-box">
-                        <p>
-                            Music is an art form whose medium is sound and
-                            silence. Generally, a song is considered the
-                            smallest standalone work of music, especially when
-                            involving singing.
-                        </p>
+                        <p>{{ skill.proficiency_level }}</p>
                     </div>
                 </swiper-slide>
 
