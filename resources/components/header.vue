@@ -22,7 +22,7 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" id="header">
         <div class="px-4 py-5 my-3 text-center">
             <div class="text">
                 <h3 class="text-name">Hola! <span class="name">I'm John</span> </h3>

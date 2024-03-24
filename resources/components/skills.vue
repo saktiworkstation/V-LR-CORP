@@ -67,8 +67,8 @@
                 </swiper-slide>
                 <swiper-slide>
                     <div class="img-box">
-                        <span class="fa-brands fa-react"></span>
-                        <h3>React</h3>
+                        <span class="fa-brands fa-vuejs"></span>
+                        <h3>Vue</h3>
                     </div>
                     <div class="text-box">
                         <p>

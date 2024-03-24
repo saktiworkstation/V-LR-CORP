@@ -19,23 +19,16 @@
 </script>
 
 <template>
-        <div>
-            <Navbar />
-        </div>
-        
-        <div>
-            <Header />
-        </div>
-        <div>
-            <About />
-        </div>
-        <div>
-            <Skills />
-        </div>
-        <div>
-            <Project />
-        </div>
-        <div>
-            <Footer />
-        </div>
+        <Navbar />
+
+        <Header />
+
+        <About />
+
+        <Skills />
+
+        <Project />
+
+        <Footer />
+
 </template>

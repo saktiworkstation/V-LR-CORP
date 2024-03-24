@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeControler::class, 'index']);
+
+Route::any('/{slug}', function () {
+    return view('dashboard');
+});

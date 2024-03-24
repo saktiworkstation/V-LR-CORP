@@ -14,20 +14,20 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid p-0" id="Footer">
-        <div class="footer-custom">
-            <footer class="py-5  ">
-                <div class="row row-text">
-                    <h1 class="h1-footer">Ready to <span> Build <br> Awesome </span> project? </h1>
-                    <p class="p-footer">Memulai sebuah projek dengan riset <br> dan memvalidasi
-                        ideas dengan usability-testing agar maksimal.</p>
-                    <button class="btn btn-footer">Hire Me Now</button>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-2 mb-3">
-                            <img src="#" alt="logo">
-                        </div>
+<div class="container-fluid p-0 id=Footer">
+  <div class="footer-custom">
+    <footer class="py-5  ">
+    <div class="row row-text">
+        <h1 class="h1-footer">Ready to <span> Build <br> Awesome </span> project? </h1>
+        <p class="p-footer">Memulai sebuah projek dengan riset <br> dan memvalidasi  
+           ideas dengan usability-testing agar maksimal.</p>
+        <button class="btn btn-footer">Hire Me Now</button>
+    </div>
+    <div class="container">
+      <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <img src="#" alt="logo">
+      </div>
 
                         <div class="col-6 col-md-2 mb-3">
                             <h5>Section</h5>

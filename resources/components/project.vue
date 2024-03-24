@@ -18,7 +18,7 @@ export default {
                 <div class="col">
                     <div class="">
                         <div class="card-body p-0">
-                            <img src="../img/img-pjct/v20_339.png" alt="" />
+                            <img src="../img/img-pjct/v20_338.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export default {
                 <div class="col">
                     <div class="">
                         <div class="card-body p-0">
-                            <img src="../img/img-pjct/v20_339.png" alt="" />
+                            <img src="../img/img-pjct/v20_340.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ export default {
                 <div class="col">
                     <div class="">
                         <div class="card-body p-0">
-                            <img src="../img/img-pjct/v20_339.png" alt="" />
+                            <img src="../img/img-pjct/v20_344.png" alt="" />
                         </div>
                     </div>
                 </div>
