@@ -32,7 +32,7 @@
                 </h1>
             </div>
             <div class="experience">
-                <h5 class="">Compnay Experience</h5>
+                <h5 class="">Company Experience</h5>
                 <div class="brands">
                     <div class="brands-slide">
                         <img v-for="brandImage in brandImages" :key="brandImage.brandName" :src="brandImage.url" :alt="brandImage.brandName" srcset="">

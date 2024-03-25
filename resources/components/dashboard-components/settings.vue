@@ -31,6 +31,16 @@
                 <input type="text" class="form-control" id="website" placeholder="website">
             </div>
         </div>
+         <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="Facebook">Facebook</label>
+                <input type="text" class="form-control" id="Facebook" placeholder="Facebook">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="X">X</label>
+                <input type="text" class="form-control" id="X" placeholder="X">
+            </div>
+        </div>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="linkidn">LinkIdn</label>
