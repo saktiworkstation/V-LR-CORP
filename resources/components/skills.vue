@@ -8,7 +8,7 @@
                 :pagination="{
                 clickable: true,
             }" :modules="modules" class="mySwiper">
-                <swiper-slide v-for="skill in skills" :key="skill.id">
+                <swiper-slide v-for="(skill, index) in skills" :key="index">
                     <div class="img-box">
                         <span class="fa-solid fa-user-graduate"></span>
                         <h3>{{ skill.skill_name }}</h3>
@@ -17,63 +17,6 @@
                         <p>{{ skill.proficiency_level }}</p>
                     </div>
                 </swiper-slide>
-
-                <!-- <swiper-slide>
-                    <div class="img-box">
-                        <span class="fa-brands fa-html5"></span>
-                        <h3>Html</h3>
-                    </div>
-                    <div class="text-box">
-                        <p>
-                            Music is an art form whose medium is sound and
-                            silence. Generally, a song is considered the
-                            smallest standalone work of music, especially when
-                            involving singing.
-                        </p>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="img-box">
-                        <span class="fa-brands fa-css3-alt"></span>
-                        <h3>Css</h3>
-                    </div>
-                    <div class="text-box">
-                        <p>
-                            Music is an art form whose medium is sound and
-                            silence. Generally, a song is considered the
-                            smallest standalone work of music, especially when
-                            involving singing.
-                        </p>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="img-box">
-                        <span class="fa-brands fa-react"></span>
-                        <h3>React</h3>
-                    </div>
-                    <div class="text-box">
-                        <p>
-                            Music is an art form whose medium is sound and
-                            silence. Generally, a song is considered the
-                            smallest standalone work of music, especially when
-                            involving singing.
-                        </p>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="img-box">
-                        <span class="fa-brands fa-vuejs"></span>
-                        <h3>Vue</h3>
-                    </div>
-                    <div class="text-box">
-                        <p>
-                            Music is an art form whose medium is sound and
-                            silence. Generally, a song is considered the
-                            smallest standalone work of music, especially when
-                            involving singing.
-                        </p>
-                    </div>
-                </swiper-slide> -->
             </swiper>
         </div>
     </div>
@@ -103,5 +46,11 @@ export default {
             modules: [Pagination, Navigation],
         };
     },
+    props: {
+        skills: {
+            type: Array,
+            required: true
+        }
+    }
 };
 </script>

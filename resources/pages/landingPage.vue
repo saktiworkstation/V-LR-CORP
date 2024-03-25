@@ -1,34 +1,40 @@
 <script>
-    import Navbar from '../components/navbar.vue'
-    import Header from '../components/header.vue'
-    import About from '../components/about.vue'
-    import Skills from '../components/skills.vue'
-    import Project from '../components/project.vue'
-    import Footer from '../components/footer.vue'
+import Navbar from '../components/navbar.vue'
+import Header from '../components/header.vue'
+import About from '../components/about.vue'
+import Skills from '../components/skills.vue'
+import Project from '../components/project.vue'
+import Footer from '../components/footer.vue'
 
-    export default{
-        components:{
-            Navbar,
-            Header,
-            About,
-            Skills,
-            Project,
-            Footer
+export default {
+    components: {
+        Navbar,
+        Header,
+        About,
+        Skills,
+        Project,
+        Footer
+    },
+    props: {
+        skills: {
+            type: Array,
+            required: true
         }
     }
+}
 </script>
 
 <template>
-        <Navbar />
+    <Navbar />
 
-        <Header />
+    <Header />
 
-        <About />
+    <About />
 
-        <Skills />
+    <Skills :skills="skills" />
 
-        <Project />
+    <Project />
 
-        <Footer />
+    <Footer />
 
 </template>

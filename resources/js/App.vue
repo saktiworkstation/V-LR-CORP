@@ -1,15 +1,20 @@
 <script>
-    import LandingPage from '../pages/landingPage.vue'
+import LandingPage from '../pages/landingPage.vue'
 
-    export default{
-        components: {
-            LandingPage
+export default {
+    components: {
+        LandingPage
+    },
+    data() {
+        return {
+            skills: skills // Menggunakan data skills yang telah didefinisikan sebelumnya
         }
     }
+}
 </script>
 
 <template>
 
-    <LandingPage />
+    <LandingPage :skills="skills" />
 
 </template>
