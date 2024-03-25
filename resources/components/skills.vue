@@ -13,7 +13,7 @@
                         <span class="fa-solid fa-user-graduate"></span>
                         <h3>{{ skill.skill_name }}</h3>
                     </div>
-                    <div class="text-box">
+                    <div class="text-box pt-4">
                         <p>{{ skill.proficiency_level }}</p>
                     </div>
                 </swiper-slide>
