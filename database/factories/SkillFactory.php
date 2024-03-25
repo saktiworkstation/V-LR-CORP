@@ -17,9 +17,9 @@ class SkillFactory extends Factory
     public function definition(): array
     {
         return [
-            'skill_name' => fake()->sentence(mt_rand(2, 8)),
+            'skill_name' => fake()->word,
             'skill_category' => mt_rand(1, 10),
-            'proficiency_level' => fake()->word,
+            'proficiency_level' => fake()->sentence(mt_rand(2, 8)),
         ];
     }
 }
