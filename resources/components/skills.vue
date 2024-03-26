@@ -3,14 +3,13 @@
         <div class="skills">
             <p class="p">what can i do?</p>
             <h1>My Skills</h1>
-
             <swiper :navigation="true" :slidesPerView="'auto'" :centeredSlides="true" :loop="true" :spaceBetween="40"
                 :pagination="{
                 clickable: true,
             }" :modules="modules" class="mySwiper">
                 <swiper-slide v-for="(skill, index) in skills" :key="index">
                     <div class="img-box">
-                        <span class="fa-solid fa-user-graduate"></span>
+                        <span class="fa-solid fa-brain"></span>
                         <h3>{{ skill.skill_name }}</h3>
                     </div>
                     <div class="text-box pt-4">
