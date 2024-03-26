@@ -2,11 +2,12 @@
     <div class="container" id="Skills">
         <div class="skills">
             <p class="p">what can i do?</p>
-            <h1>My Skills</h1>
+            <h1>My Skills And Educations</h1>
             <swiper :navigation="true" :slidesPerView="'auto'" :centeredSlides="true" :loop="true" :spaceBetween="40"
                 :pagination="{
                 clickable: true,
             }" :modules="modules" class="mySwiper">
+                <!-- Skills -->
                 <swiper-slide v-for="(skill, index) in skills" :key="index">
                     <div class="img-box">
                         <span class="fa-solid fa-brain"></span>
