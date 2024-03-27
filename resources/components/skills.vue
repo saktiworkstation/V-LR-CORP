@@ -17,6 +17,17 @@
                         <p>{{ skill.proficiency_level }}</p>
                     </div>
                 </swiper-slide>
+                <!-- Educations -->
+                <swiper-slide v-for="(education, index) in educations" :key="index">
+                    <div class="img-box">
+                        <span class="fa-solid fa-school"></span>
+                        <h3>{{ education.degree }}</h3>
+                    </div>
+                    <div class="text-box pt-4">
+                        <p>School name = {{ education.school_name }}</p>
+                        <p>Field Of Study = {{ education.field_of_study }}</p>
+                    </div>
+                </swiper-slide>
             </swiper>
         </div>
     </div>
@@ -48,6 +59,10 @@ export default {
     },
     props: {
         skills: {
+            type: Array,
+            required: true
+        },
+        educations: {
             type: Array,
             required: true
         }

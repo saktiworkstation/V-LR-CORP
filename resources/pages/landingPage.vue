@@ -19,6 +19,10 @@ export default {
         skills: {
             type: Array,
             required: true
+        },
+        educations: {
+            type: Array,
+            required: true
         }
     }
 }
@@ -31,7 +35,7 @@ export default {
 
     <About />
 
-    <Skills :skills="skills" />
+    <Skills :skills="skills" :educations="educations" />
 
     <Project />
 

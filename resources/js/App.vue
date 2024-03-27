@@ -7,7 +7,8 @@ export default {
     },
     data() {
         return {
-            skills: skills
+            skills: skills,
+            educations: educations,
         }
     }
 }
@@ -15,6 +16,6 @@ export default {
 
 <template>
 
-    <LandingPage :skills="skills" />
+    <LandingPage :skills="skills" :educations="educations" />
 
 </template>

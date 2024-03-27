@@ -32,12 +32,14 @@
 
     <div id="app">
         <Skills :skills="{{ json_encode($skills) }}"></Skills>
+        <Educations :educations="{{ json_encode($educations) }}"></Educations>
     </div>
 
     <script src="../js//app.js" type="module"></script>
 
     <script>
         var skills = @json($skills);
+        var educations = @json($educations);
     </script>
 
     @vite('resources/js/app.js')
