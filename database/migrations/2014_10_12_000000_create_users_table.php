@@ -19,8 +19,12 @@ return new class extends Migration
             $table->string('age')->nullable();
             $table->string('address')->nullable();
             $table->string('website')->nullable();
-            $table->string('phone')->nullable();
-            $table->text('descriptions')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('linkin')->nullable();
+            $table->string('github')->nullable();
+            $table->string('x')->nullable();
+            $table->text('about')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
