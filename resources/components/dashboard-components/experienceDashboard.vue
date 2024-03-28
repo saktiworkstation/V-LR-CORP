@@ -23,10 +23,10 @@
                                 <thead>
                                     <tr>
                                         <th class="border-top-0">#</th>
-                                        <th class="border-top-0">Username</th>
-                                        <th class="border-top-0">Name Company</th>
-                                        <th class="border-top-0">Duration</th>
-                                        <th class="border-top-0">Position</th>
+                                        <th class="border-top-0 th-custom">Username</th>
+                                        <th class="border-top-0 th-custom">Name Company</th>
+                                        <th class="border-top-0 th-custom">Duration</th>
+                                        <th class="border-top-0 th-custom">Position</th>
                                         <th class="border-top-0">Acion</th>
                                         <!-- <th class="border-top-0">Project</th> -->
                                     </tr>
@@ -61,10 +61,10 @@
                                 <thead>
                                     <tr>
                                         <th class="border-top-0">#</th>
-                                        <th class="border-top-0">Username</th>
-                                        <th class="border-top-0">Name project</th>
-                                        <th class="border-top-0">Technology</th>
-                                        <th class="border-top-0">Link</th>
+                                        <th class="border-top-0 th-custom">Username</th>
+                                        <th class="border-top-0 th-custom">Name project</th>
+                                        <th class="border-top-0 th-custom">Technology</th>
+                                        <th class="border-top-0 th-custom">Link</th>
                                         <th class="border-top-0">Action</th>
                                     </tr>
                                 </thead>

@@ -21,17 +21,17 @@
                                 <thead>
                                     <tr>
                                         <th class="border-top-0">#</th>
-                                        <th class="border-top-0" colspan="2">Image</th>
-                                        <th class="border-top-0">Username</th>
-                                        <th class="border-top-0">Email</th>
-                                        <th class="border-top-0">Password</th>
+                                        <th class="border-top-0 th-img" colspan="2">Image</th>
+                                        <th class="border-top-0 th-custom">Username</th>
+                                        <th class="border-top-0 th-custom">Email</th>
+                                        <th class="border-top-0 th-custom">Password</th>
                                         <th class="border-top-0" colspan="2">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td colspan="2" ><img src="" alt=""></td>
+                                        <td colspan="2" ><img class="img-table" src="" alt=""></td>
                                         <td>Deshmukh</td>
                                         <td>Prohaska</td>
                                         <td>@Genelia</td>
@@ -42,7 +42,7 @@
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td colspan="2" ><img src="" alt=""></td>
+                                        <td colspan="2" ><img class="img-table" src="" alt=""></td>
                                         <td>Deshmukh</td>
                                         <td>Gaylord</td>
                                         <td>@Ritesh</td>
@@ -53,7 +53,7 @@
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td colspan="2" ><img src="" alt=""></td>
+                                        <td colspan="2" ><img class="img-table" src="" alt=""></td>
                                         <td>Sanghani</td>
                                         <td>Gusikowski</td>
                                         <td>@Govinda</td>
@@ -64,7 +64,7 @@
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td colspan="2" ><img src="" alt=""></td>
+                                        <td colspan="2" ><img class="img-table" src="" alt=""></td>
                                         <td>Roshan</td>
                                         <td>Rogahn</td>
                                         <td>@Hritik</td>
@@ -75,7 +75,7 @@
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td colspan="2" ><img src="" alt=""></td>
+                                        <td colspan="2" ><img class="img-table" src="" alt=""></td>
                                         <td>Joshi</td>
                                         <td>Hickle</td>
                                         <td>@Maruti</td>
@@ -86,7 +86,7 @@
                                     </tr>
                                     <tr>
                                         <td>6</td>
-                                        <td colspan="2" ><img src="" alt=""></td>
+                                        <td colspan="2" ><img class="img-table" src="" alt=""></td>
                                         <td>Nigam</td>
                                         <td>Eichmann</td>
                                         <td>@Sonu</td>

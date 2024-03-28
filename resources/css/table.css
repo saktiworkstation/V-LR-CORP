@@ -2,3 +2,16 @@
     width: 100px;
     height: auto;
 }
+
+.th-custom{
+    width: 250px;
+}
+
+.th-img{
+    width: 200px;
+}
+
+.img-table{
+    max-width: 220px;
+    max-height: 220px;
+}
