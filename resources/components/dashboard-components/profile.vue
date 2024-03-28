@@ -20,23 +20,27 @@
           <div class="card-body p-0">
             <ul class="list-group list-group-flush rounded-3">
               <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <i class="fas fa-globe fa-lg text-warning"></i>
+                <fa class="fa-xl":icon="['fas', 'globe']" ></fa>
                 <p class="mb-0">https://mdbootstrap.com</p>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                <fa class="fa-xl":icon="['fab', 'github']" style="color: #333333;"></fa>
                 <p class="mb-0">mdbootstrap</p>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                <fa class="fa-xl":icon="['fab', 'twitter']" style="color: #55acee;"></fa>
                 <p class="mb-0">@mdbootstrap</p>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                <fa class="fa-xl":icon="['fab', 'instagram']" style="color: #ac2bac;"></fa>
                 <p class="mb-0">mdbootstrap</p>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                <fa class="fa-xl":icon="['fab', 'facebook']" style="color: #3b5998;"></fa>
+                <p class="mb-0">mdbootstrap</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <fa class="fa-xl":icon="['fab', 'linkedin']" style="color: #3b5998;"></fa>
                 <p class="mb-0">mdbootstrap</p>
               </li>
             </ul>
