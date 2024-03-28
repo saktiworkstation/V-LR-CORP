@@ -75,8 +75,8 @@
                                         <td>Prohaska</td>
                                         <td>@Genelia</td>
                                         <td>@Genelia</td>
-                                        <td><button class="btn btn-table btn-success me-3">Edit</button>
-                                            <button class="btn btn-table btn-danger">Delete</button>
+                                        <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2":icon="['fas', 'pen-to-square']" ></fa></button>
+                                            <button class="btn btn-table btn-danger">Delete <fa class="ms-2":icon="['fas', 'trash']" ></fa></button>
                                         </td>
                                     </tr>
                                 </tbody>
