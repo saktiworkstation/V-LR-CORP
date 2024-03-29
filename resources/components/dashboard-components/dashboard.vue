@@ -39,7 +39,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-md-flex">
-                            <h4 class="card-title col-md-10 mb-md-0 mb-3 align-self-center">Projects of the Month</h4>
+                            <h4 class="card-title col-md-10 mb-md-0 mb-3 align-self-center">Meesage</h4>
                             <div class="col-md-2 ms-auto">
                                 <select class="form-select shadow-none col-md-6 ml-auto">
                                     <option selected>January</option>
@@ -53,60 +53,20 @@
                             <table class="table stylish-table no-wrap">
                                 <thead>
                                     <tr>
-                                        <th class="border-top-0">Position</th>
                                         <th class="border-top-0">Name</th>
-                                        <th class="border-top-0">Country</th>
-                                        <th class="border-top-0">Register Date</th>
+                                        <th class="border-top-0">Email</th>
+                                        <th class="border-top-0">Message</th>
+                                        <th class="border-top-0">Create at</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr v-for="(message, index) in messages" :key="index">
                                         <td class="align-middle">
-                                            <h6 class="text-dark">Web Designer</h6>
+                                            <h6 class="text-dark">{{ message.name }}</h6>
                                         </td>
-                                        <td class="align-middle">Elite Admin</td>
-                                        <td class="align-middle">Indonesia</td>
-                                        <td class="align-middle">20-10-2018</td>
-                                    </tr>
-                                    <tr class="active">
-                                        <td class="align-middle">
-                                            <h6 class="text-dark">Project Manager</h6>
-                                        </td>
-                                        <td class="align-middle">Real Homes</td>
-                                        <td class="align-middle">Indonesia</td>
-                                        <td class="align-middle">20-10-2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <h6 class="text-dark">Developer</h6>
-                                        </td>
-                                        <td class="align-middle">MedicalPro Theme</td>
-                                        <td class="align-middle">Indonesia</td>
-                                        <td class="align-middle">20-10-2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <h6 class="text-dark">Frontend Eng</h6>
-                                        </td>
-                                        <td class="align-middle">Elite Admin</td>
-                                        <td class="align-middle">Indonesia</td>
-                                        <td class="align-middle">20-10-2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <h6 class="text-dark">Content Writer</h6>
-                                        </td>
-                                        <td class="align-middle">Helping Hands</td>
-                                        <td class="align-middle">Indonesia</td>
-                                        <td class="align-middle">20-10-2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <h6 class="tex-darkd">Graphic</h6>
-                                        </td>
-                                        <td class="align-middle">Digital Agency</td>
-                                        <td class="align-middle">Indonesia</td>
-                                        <td class="align-middle">20-10-2018</td>
+                                        <td class="align-middle">{{ message.email }}</td>
+                                        <td class="align-middle">{{ messagge.message }}</td>
+                                        <td class="align-middle">{{ message.created_at }}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -125,11 +85,11 @@
 
 export default {
     name: 'dashboard',
-    data() {
-        return {
-
+    props: {
+        messages: {
+            type: Array,
+            required: true
         }
     }
 }
-
 </script>

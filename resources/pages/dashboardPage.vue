@@ -5,7 +5,7 @@
         <Sidebar />
 
         <div class="content-wrapper">
-            <RouterView />
+            <RouterView :messages="messages" />
         </div>
         <footer>
             <dashboardFooter />
@@ -29,6 +29,12 @@ export default {
         dashboard,
         dashboardFooter,
         skillsDashboard
+    },
+    props: {
+        messages: {
+            type: Array,
+            required: true
+        }
     }
 }
 </script>

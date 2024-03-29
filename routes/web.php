@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeControler;
+use App\Models\Message;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,5 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeControler::class, 'index']);
 
 Route::any('/{slug}', function () {
-    return view('dashboard');
+    return view('dashboard', [
+        'messages' => Message::all(),
+    ]);
 });
