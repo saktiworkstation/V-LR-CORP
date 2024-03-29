@@ -65,7 +65,7 @@
                                             <h6 class="text-dark">{{ message.name }}</h6>
                                         </td>
                                         <td class="align-middle">{{ message.email }}</td>
-                                        <td class="align-middle">{{ messagge.message }}</td>
+                                        <td class="align-middle">{{ message.message }}</td>
                                         <td class="align-middle">{{ message.created_at }}</td>
                                     </tr>
                                 </tbody>
