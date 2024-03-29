@@ -17,12 +17,8 @@
 
             <div class="form-inline">
                 <div class="input-group" data-widget="sidebar-search">
-                    <input
-                        class="form-control form-control-sidebar"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    />
+                    <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                        aria-label="Search" />
                     <div class="input-group-append">
                         <button class="btn btn-sidebar">
                             <fa :icon="['fas', 'search']"></fa>
@@ -32,62 +28,48 @@
             </div>
 
             <nav class="mt-2">
-                <ul
-                    class="nav nav-pills nav-sidebar flex-column"
-                    data-widget="treeview"
-                    role="menu"
-                    data-accordion="false"
-                >
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
                     <li class="nav-item menu-open">
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <div class="nav-link">
-                                    <i class="right"
-                                        ><fa :icon="['fas', 'clock']"></fa
-                                    ></i>
+                                    <i class="right">
+                                        <fa :icon="['fas', 'clock']"></fa>
+                                    </i>
                                     <RouterLink to="/">Dashboard</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="nav-link">
-                                    <i class="right"
-                                        ><fa :icon="['fas', 'circle-user']"></fa
-                                    ></i>
-                                    <RouterLink to="/dashboard/profile"
-                                        >profile</RouterLink
-                                    >
+                                    <i class="right">
+                                        <fa :icon="['fas', 'circle-user']"></fa>
+                                    </i>
+                                    <RouterLink to="/dashboard/profile">profile</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="nav-link">
-                                    <i class="right"
-                                        ><fa :icon="['fas', 'user']"></fa
-                                    ></i>
-                                    <RouterLink to="/dashboard/users"
-                                        >Table Users</RouterLink
-                                    >
+                                    <i class="right">
+                                        <fa :icon="['fas', 'user']"></fa>
+                                    </i>
+                                    <RouterLink to="/dashboard/users">Table Users</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="nav-link">
-                                    <i class="right"
-                                        ><fa :icon="['fas', 'clipboard']"></fa
-                                    ></i>
-                                    <RouterLink to="/dashboard/skills"
-                                        >Experience</RouterLink
-                                    >
+                                    <i class="right">
+                                        <fa :icon="['fas', 'clipboard']"></fa>
+                                    </i>
+                                    <RouterLink to="/dashboard/skills">Experience</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="nav-link">
-                                    <i class="right"
-                                        ><fa
-                                            :icon="['fas', 'gears']"
-                                        ></fa
-                                    ></i>
-                                    <RouterLink to="/dashboard/settings"
-                                        >User Setting</RouterLink
-                                    >
+                                    <i class="right">
+                                        <fa :icon="['fas', 'gears']"></fa>
+                                    </i>
+                                    <RouterLink to="/dashboard/settings">User Setting</RouterLink>
                                 </div>
                             </li>
                         </ul>
@@ -99,9 +81,9 @@
         <footer class="my-5">
             <div class="nav-item my-5">
                 <button class="btn btn-sidebar" style="width: 100%;">Log Out
-                <span class=" ms-3">
-                    <fa :icon="['fas', 'right-from-bracket']"></fa>
-                </span>
+                    <span class=" ms-3">
+                        <fa :icon="['fas', 'right-from-bracket']"></fa>
+                    </span>
                 </button>
             </div>
         </footer>
@@ -111,6 +93,6 @@
 <script>
 export default {
     name: "sidebar",
-    data() {},
+    data() { },
 };
 </script>

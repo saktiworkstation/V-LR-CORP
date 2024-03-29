@@ -5,9 +5,12 @@
             <div class="col-sm-5">
                 <div class="card">
                     <div class="card-body">
-                        <button class="btn btn-primary me-3" @click="showProject()">View Project <fa class="ms-2":icon="['fas', 'eye']"></fa></button>
-                        <button class="btn btn-success me-3">Add Experience <fa class="ms-2":icon="['fas', 'plus']"></fa></button>
-                        <button class="btn btn-success me-3">Add Project <fa class="ms-2":icon="['fas', 'plus']"></fa></button>
+                        <button class="btn btn-primary me-3" @click="showProject()">View Project <fa class="ms-2"
+                                :icon="['fas', 'eye']"></fa></button>
+                        <button class="btn btn-success me-3">Add Experience <fa class="ms-2" :icon="['fas', 'plus']">
+                            </fa></button>
+                        <button class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
+                            </button>
                     </div>
                 </div>
             </div>
@@ -38,8 +41,10 @@
                                         <td>Prohaska</td>
                                         <td>@Genelia</td>
                                         <td>@Genelia</td>
-                                        <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2":icon="['fas', 'pen-to-square']" ></fa></button>
-                                            <button class="btn btn-table btn-danger">Delete <fa class="ms-2":icon="['fas', 'trash']" ></fa></button>
+                                        <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2"
+                                                    :icon="['fas', 'pen-to-square']"></fa></button>
+                                            <button class="btn btn-table btn-danger">Delete <fa class="ms-2"
+                                                    :icon="['fas', 'trash']"></fa></button>
                                         </td>
                                         <!-- <td><button class="btn btn-primary" @click="showProject()">Show</button></td> -->
                                     </tr>
@@ -75,8 +80,10 @@
                                         <td>Prohaska</td>
                                         <td>@Genelia</td>
                                         <td>@Genelia</td>
-                                        <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2":icon="['fas', 'pen-to-square']" ></fa></button>
-                                            <button class="btn btn-table btn-danger">Delete <fa class="ms-2":icon="['fas', 'trash']" ></fa></button>
+                                        <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2"
+                                                    :icon="['fas', 'pen-to-square']"></fa></button>
+                                            <button class="btn btn-table btn-danger">Delete <fa class="ms-2"
+                                                    :icon="['fas', 'trash']"></fa></button>
                                         </td>
                                     </tr>
                                 </tbody>
