@@ -85,6 +85,11 @@
 
 export default {
     name: 'dashboard',
+    data() {
+        return {
+
+        }
+    },
     props: {
         messages: {
             type: Array,
