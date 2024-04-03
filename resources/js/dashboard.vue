@@ -4,10 +4,9 @@ export default {
     components: {
         dashboardPage
     },
-    props: {
-        messages: {
-            type: Array,
-            required: true
+    data() {
+        return {
+            messages: messages,
         }
     }
 }
