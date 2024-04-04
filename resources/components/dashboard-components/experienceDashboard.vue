@@ -2,7 +2,7 @@
     <div class="container-fluid py-5 px-5">
 
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
                         <button class="btn btn-primary me-3" @click="showProject()">View Project <fa class="ms-2"
@@ -10,7 +10,7 @@
                         <button class="btn btn-success me-3">Add Experience <fa class="ms-2" :icon="['fas', 'plus']">
                             </fa></button>
                         <button class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
-                            </button>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -25,22 +25,20 @@
                             <table class="table user-table no-wrap">
                                 <thead>
                                     <tr>
-                                        <th class="border-top-0">#</th>
-                                        <th class="border-top-0 th-custom">Username</th>
-                                        <th class="border-top-0 th-custom">Name Company</th>
-                                        <th class="border-top-0 th-custom">Duration</th>
-                                        <th class="border-top-0 th-custom">Position</th>
+                                        <th class="border-top-0 th-custom">Company</th>
+                                        <th class="border-top-0 th-custom">Durations</th>
+                                        <th class="border-top-0 th-custom">Field</th>
+                                        <th class="border-top-0 th-custom">Order</th>
                                         <th class="border-top-0">Acion</th>
                                         <!-- <th class="border-top-0">Project</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Deshmukh</td>
-                                        <td>Prohaska</td>
-                                        <td>@Genelia</td>
-                                        <td>@Genelia</td>
+                                    <tr v-for="(experience, index) in experiences" :key="index">
+                                        <td>{{ experience.company }}</td>
+                                        <td>{{ experience.durations }}</td>
+                                        <td>{{ experience.field }}</td>
+                                        <td>{{ experience.order }}</td>
                                         <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2"
                                                     :icon="['fas', 'pen-to-square']"></fa></button>
                                             <button class="btn btn-table btn-danger">Delete <fa class="ms-2"
@@ -110,6 +108,12 @@ export default {
     methods: {
         showProject() {
             this.projectState = !this.projectState
+        }
+    },
+    props: {
+        experiences: {
+            type: Array,
+            required: true
         }
     }
 }

@@ -7,10 +7,11 @@ export default {
     data() {
         return {
             messages: messages,
+            experiences: experiences,
         }
     }
 }
 </script>
 <template>
-    <dashboardPage :messages="messages" />
+    <dashboardPage :messages="messages" :experiences="experiences" />
 </template>

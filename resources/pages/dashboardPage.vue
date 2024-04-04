@@ -5,7 +5,7 @@
         <Sidebar />
 
         <div class="content-wrapper">
-            <RouterView :messages="messages" />
+            <RouterView :messages="messages" :experiences="experiences" />
         </div>
         <footer>
             <dashboardFooter />
@@ -32,6 +32,10 @@ export default {
     },
     props: {
         messages: {
+            type: Array,
+            required: true
+        },
+        experiences: {
             type: Array,
             required: true
         }
