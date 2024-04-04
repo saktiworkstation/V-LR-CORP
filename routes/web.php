@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeControler;
 use App\Models\Experience;
 use App\Models\Message;
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,5 +23,6 @@ Route::any('/{slug}', function () {
     return view('dashboard', [
         'messages' => Message::all(),
         'experiences' => Experience::all(),
+        'projects' => Project::all(),
     ]);
 });

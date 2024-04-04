@@ -22,12 +22,14 @@
     <div id="admin-page">
         <Messages :messages="{{ json_encode($messages) }}"></Messages>
         <Experiences :experiences="{{ json_encode($experiences) }}"></Experiences>
+        <Projects :projects="{{ json_encode($projects) }}"></Projects>
     </div>
 
     <script src="../js//app.js" type="module"></script>
     <script>
         var messages = @json($messages);
         var experiences = @json($experiences);
+        var projects = @json($projects);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
     @vite('resources/js/app.js')

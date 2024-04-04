@@ -8,10 +8,11 @@ export default {
         return {
             messages: messages,
             experiences: experiences,
+            projects: projects,
         }
     }
 }
 </script>
 <template>
-    <dashboardPage :messages="messages" :experiences="experiences" />
+    <dashboardPage :messages="messages" :experiences="experiences" :projects="projects" />
 </template>

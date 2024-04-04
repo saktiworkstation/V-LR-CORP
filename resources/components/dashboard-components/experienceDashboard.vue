@@ -39,7 +39,7 @@
                                         <td>{{ experience.durations }}</td>
                                         <td>{{ experience.field }}</td>
                                         <td>{{ experience.order }}</td>
-                                        <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2"
+                                        <td><button class="btn btn-table btn-success me-3 mb-2">Edit <fa class="ms-2"
                                                     :icon="['fas', 'pen-to-square']"></fa></button>
                                             <button class="btn btn-table btn-danger">Delete <fa class="ms-2"
                                                     :icon="['fas', 'trash']"></fa></button>
@@ -63,22 +63,18 @@
                             <table class="table user-table no-wrap">
                                 <thead>
                                     <tr>
-                                        <th class="border-top-0">#</th>
-                                        <th class="border-top-0 th-custom">Username</th>
-                                        <th class="border-top-0 th-custom">Name project</th>
-                                        <th class="border-top-0 th-custom">Technology</th>
-                                        <th class="border-top-0 th-custom">Link</th>
+                                        <th class="border-top-0 th-custom">Project Name</th>
+                                        <th class="border-top-0 th-custom">Image Name</th>
+                                        <th class="border-top-0 th-custom">Project Link</th>
                                         <th class="border-top-0">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Deshmukh</td>
-                                        <td>Prohaska</td>
-                                        <td>@Genelia</td>
-                                        <td>@Genelia</td>
-                                        <td><button class="btn btn-table btn-success me-3">Edit <fa class="ms-2"
+                                    <tr v-for="(project, index) in projects" :key="index">
+                                        <td>{{ project.name }}</td>
+                                        <td>{{ project.img }}</td>
+                                        <td>{{ project.link }}</td>
+                                        <td><button class="btn btn-table btn-success me-3 mb-2">Edit <fa class="ms-2"
                                                     :icon="['fas', 'pen-to-square']"></fa></button>
                                             <button class="btn btn-table btn-danger">Delete <fa class="ms-2"
                                                     :icon="['fas', 'trash']"></fa></button>
@@ -112,6 +108,10 @@ export default {
     },
     props: {
         experiences: {
+            type: Array,
+            required: true
+        },
+        projects: {
             type: Array,
             required: true
         }
