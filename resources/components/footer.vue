@@ -21,7 +21,7 @@ export default {
         <h1 class="h1-footer">Ready to <span> Build <br> Awesome </span> project? </h1>
         <p class="p-footer">Memulai sebuah projek dengan riset <br> dan memvalidasi  
            ideas dengan usability-testing agar maksimal.</p>
-        <button class="btn btn-footer">Hire Me Now</button>
+        <button class="btn btn-footer btn-primary">Hire Me Now</button>
     </div>
     <div class="container">
       <div class="row">
@@ -69,7 +69,7 @@ export default {
                                     <label for="newsletter1" class="visually-hidden">Email address</label>
                                     <input id="newsletter1" type="text" class="form-control"
                                         placeholder="Email address">
-                                    <button class="btn btn-primary" type="button">Subscribe</button>
+                                    <button class="btn btn-primary" type="button">Submit</button>
                                 </div>
                             </form>
                             <ul class="list-unstyled d-flex mt-4 justify-content-center gap-5">

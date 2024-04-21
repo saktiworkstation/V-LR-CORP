@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import '../css/modal.css'
 import Sidebar from '../components/dashboard-components/sidebar.vue'
 import AdminNavbar from '../components/dashboard-components/dashboardNavbar.vue'
 import profile from '../components/dashboard-components/profile.vue'

@@ -11,7 +11,7 @@
                     <img src="#" class="img-circle elevation-2" alt="#" />
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">Alexander Pierce</a>
+                    <a  style="text-decoration: none;" href="#" class="d-block">Alexander Pierce</a>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
                                     <i class="right">
                                         <fa :icon="['fas', 'clock']"></fa>
                                     </i>
-                                    <RouterLink to="/">Dashboard</RouterLink>
+                                    <RouterLink  style="text-decoration: none;" to="/">Dashboard</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -45,7 +45,7 @@
                                     <i class="right">
                                         <fa :icon="['fas', 'circle-user']"></fa>
                                     </i>
-                                    <RouterLink to="/dashboard/profile">profile</RouterLink>
+                                    <RouterLink style="text-decoration: none;" to="/dashboard/profile">profile</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -53,7 +53,7 @@
                                     <i class="right">
                                         <fa :icon="['fas', 'user']"></fa>
                                     </i>
-                                    <RouterLink to="/dashboard/users">Table Users</RouterLink>
+                                    <RouterLink  style="text-decoration: none;" to="/dashboard/users">Table Users</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -61,7 +61,7 @@
                                     <i class="right">
                                         <fa :icon="['fas', 'clipboard']"></fa>
                                     </i>
-                                    <RouterLink to="/dashboard/skills">Experience</RouterLink>
+                                    <RouterLink  style="text-decoration: none;" to="/dashboard/skills">Experience</RouterLink>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -69,7 +69,7 @@
                                     <i class="right">
                                         <fa :icon="['fas', 'gears']"></fa>
                                     </i>
-                                    <RouterLink to="/dashboard/settings">User Setting</RouterLink>
+                                    <RouterLink  style="text-decoration: none;" to="/dashboard/settings">User Setting</RouterLink>
                                 </div>
                             </li>
                         </ul>

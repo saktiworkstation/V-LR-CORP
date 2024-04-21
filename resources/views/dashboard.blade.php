@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Starter</title>
+    <title>Dashboard</title>
 
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
@@ -23,6 +23,9 @@
         <Messages :messages="{{ json_encode($messages) }}"></Messages>
         <Experiences :experiences="{{ json_encode($experiences) }}"></Experiences>
         <Projects :projects="{{ json_encode($projects) }}"></Projects>
+    </div>
+    <div id="modal-add">
+
     </div>
 
     <script src="../js//app.js" type="module"></script>
