@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ExperienceController extends Controller
 {
+    public function create()
+    {
+        return view('dashboard.experience.create');
+    }
+
     /**
      * Store a newly created resource in storage.
      */
