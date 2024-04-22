@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeControler::class, 'index']);
 
-Route::any('/{slug}', function () {
+Route::any('/dashboard', function () {
     return view('dashboard', [
         'messages' => Message::all(),
         'experiences' => Experience::all(),

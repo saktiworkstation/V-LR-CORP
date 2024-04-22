@@ -21,7 +21,7 @@ class ExperienceController extends Controller
 
         Experience::create($validatedData);
 
-        return redirect('/dashboard/dashboard')->with('success', 'New ecperience has been added!');
+        return redirect('/dashboard')->with('success', 'New ecperience has been added!');
     }
 
     /**
