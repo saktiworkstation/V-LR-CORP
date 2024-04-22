@@ -152,7 +152,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <form action="" method="post">
+                            <form @submit.prevent="saveExperience">
                                 <div class="card card-primary">
                                     <div class="card-header">
                                         <h3 class="card-title">General</h3>
@@ -187,7 +187,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" @click="isAddExperienceModalOpen = false">Tutup</button>
-                    <button type="button" class="btn btn-primary">Simpan Pengalaman</button>
+                    <button type="submit" class="btn btn-primary">Simpan Pengalaman</button>
                 </div>
             </div>
         </div>
@@ -298,7 +298,8 @@
 
 <script>
 import '../../css/modal.css'
-import {ref} from 'vue'
+import { ref } from 'vue'
+import axios from 'axios'
 
 const isAddExperienceModalOpen = ref(false)
 const isAddProjectModalOpen = ref(false)
@@ -314,11 +315,33 @@ export default {
             isAddExperienceModalOpen: false,
             isEditExperienceModalOpen: false,
             isEditProjectModalOpen: false,
+            formData: {
+                company: '',
+                durations: '',
+                field: '',
+                order: ''
+            }
         }
     },
     methods: {
         showProject() {
             this.projectState = !this.projectState
+        },
+        async saveExperience() {
+            try {
+                const response = await axios.post('/dashboard/add/experience', this.formData, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                }
+                });
+                console.log(response.data);
+                // Close modal or do other actions upon successful save
+                this.isAddExperienceModalOpen = false;
+            } catch (error) {
+                console.error(error);
+                // Handle error
+            }
         }
     },
     props: {
