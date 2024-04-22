@@ -125,7 +125,7 @@
                                     <input type="text" id="inputLink" class="form-control">
                                 </div>
                                 </div>
-                            
+
                         </div>
 
                         </div>
@@ -232,7 +232,7 @@
                                     <input type="text" id="inputOrder" class="form-control">
                                 </div>
                                 </div>
-                            
+
                         </div>
 
                         </div>
