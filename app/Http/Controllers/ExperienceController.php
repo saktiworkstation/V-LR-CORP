@@ -9,7 +9,7 @@ class ExperienceController extends Controller
 {
     public function create()
     {
-        return view('dashboard.experience.create');
+        return view('form.experience.create');
     }
 
     /**
