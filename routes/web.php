@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\HomeControler;
 use App\Models\Experience;
 use App\Models\Message;
@@ -26,3 +27,5 @@ Route::any('/{slug}', function () {
         'projects' => Project::all(),
     ]);
 });
+
+Route::post('/dashboard/add/experience', [ExperienceController::class, 'store']);
