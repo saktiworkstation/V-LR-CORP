@@ -23,7 +23,7 @@ Route::get('/', [HomeControler::class, 'index']);
 Route::any('/dashboard', function () {
     return view('dashboard', [
         'messages' => Message::all(),
-        'experiences' => Experience::all(),
+        'experiences' => Experience::orderBy('order', 'asc')->get(),
         'projects' => Project::all(),
     ]);
 });
