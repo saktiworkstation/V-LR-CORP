@@ -70,7 +70,7 @@
 
                     <button class="w-100 btn btn-lg btn-primary" type="submit">Create</button>
                 </form>
-                <small class="d-block text-center mt-3">Not Registered? <a href="/dashboard">Back to dashboard</a></small>
+                <small class="d-block text-center mt-3"><a href="/dashboard">Back to dashboard</a></small>
             </main>
         </div>
     </div>
