@@ -152,35 +152,36 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="card card-primary">
-                                <div class="card-header">
-                                    <h3 class="card-title">General</h3>
-                                <div class="card-tools">
-                                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
+                            <form action="" method="post">
+                                <div class="card card-primary">
+                                    <div class="card-header">
+                                        <h3 class="card-title">General</h3>
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="inputName">Name</label>
-                                    <input type="text" id="inputName" class="form-control">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="inputName">Name</label>
+                                        <input type="text" id="inputName" class="form-control" name="company" placeholder="Reilly Inc" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputDuration">Duration</label>
+                                        <input type="text" id="inputDuration" class="form-control" name="duration" placeholder="30-05-1992 - 12-09-1982" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputField">Field</label>
+                                        <input type="text" id="inputField" class="form-control" name="field" placeholder="Programmer" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputOrder">Order</label>
+                                        <input type="number" id="inputOrder" class="form-control" name="order" required>
+                                    </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="inputDuration">Duration</label>
-                                    <input type="text" id="inputDuration" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputField">Field</label>
-                                    <input type="text" id="inputField" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputOrder">Order</label>
-                                    <input type="text" id="inputOrder" class="form-control">
-                                </div>
-                                </div>
-                            </div>
-
+                            </form>
                         </div>
                     </div>
                 </div>
