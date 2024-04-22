@@ -28,4 +28,5 @@ Route::any('/dashboard', function () {
     ]);
 });
 
-Route::post('/dashboard/add/experience', [ExperienceController::class, 'store']);
+Route::get('/dashboard/add/experience/create', [ExperienceController::class, 'create']);
+Route::post('/dashboard/add/experience/create', [ExperienceController::class, 'store']);
