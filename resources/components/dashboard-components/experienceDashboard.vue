@@ -7,7 +7,7 @@
                     <div class="card-body">
                         <button class="btn btn-primary me-3" @click="showProject()">View Project <fa class="ms-2"
                                 :icon="['fas', 'eye']"></fa></button>
-                        <a href="/dashboard/add/experience/create" class="btn btn-success me-3">Add Experience <fa class="ms-2" :icon="['fas', 'plus']">
+                        <a href="/dashboard/form/experience/create" class="btn btn-success me-3">Add Experience <fa class="ms-2" :icon="['fas', 'plus']">
                             </fa></a>
                         <!-- <button @click="isAddExperienceModalOpen = true" class="btn btn-success me-3">Add Experience <fa class="ms-2" :icon="['fas', 'plus']">
                             </fa></button> -->

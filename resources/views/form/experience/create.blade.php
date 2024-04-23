@@ -13,7 +13,7 @@
 
             <main class="form-signin">
                 <h1 class="h3 mb-3 fw-normal text-center">Add new experience</h1>
-                <form action="/dashboard/add/experience/create" method="post">
+                <form action="/dashboard/form/experience/create" method="post">
                     @csrf
                     <div class="form-floating">
                         <input type="text" name="company"
