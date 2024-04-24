@@ -27,18 +27,27 @@ class AuthController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max: 255',
-            'username' => 'required|max: 255|min:3|unique:users',
-            'email' => 'required|unique:users|email:dns',
-            'password' => 'required|max: 255|min:5'
-        ]);
+        // Check if there are any existing users
+        $userCount = User::count();
 
-        $validatedData['password'] = Hash::make($validatedData['password']);
+        // If there are no existing users, proceed with storing the new user
+        if ($userCount === 0) {
+            $validatedData = $request->validate([
+                'name' => 'required|max:255',
+                'username' => 'required|max:255|min:3|unique:users',
+                'email' => 'required|unique:users|email:dns',
+                'password' => 'required|max:255|min:5'
+            ]);
 
-        User::create($validatedData);
+            $validatedData['password'] = Hash::make($validatedData['password']);
 
-        return redirect('/login')->with('success', 'Register successfully! Please login');
+            User::create($validatedData);
+
+            return redirect('/login')->with('success', 'Registered successfully! Please login');
+        } else {
+            // If there are existing users, do not store the new user
+            return redirect()->back()->with('error', 'User already exists. Cannot register new user.');
+        }
     }
 
     public function authenticate(Request $request)
