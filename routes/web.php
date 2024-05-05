@@ -28,6 +28,11 @@ Route::post('/logout', [AuthController::class, 'logout']);
 Route::get('/register', [AuthController::class, 'register'])->middleware('guest');
 Route::post('/register', [AuthController::class, 'store']);
 
+// destroy user data
+Route::delete('/auth/{id}/delete', [AuthController::class, 'destroy'])->middleware('auth');
+// edit user data
+Route::put('/auth/{id}/edit', [AuthController::class, 'edit'])->middleware('auth');
+
 Route::any('/dashboard', function () {
     return view('dashboard', [
         'messages' => Message::all(),
