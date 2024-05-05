@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function login()
     {
-        return view('auth.login.index', [
+        return view('form.auth.login', [
             'title' => 'Login',
             'active' => 'login'
         ]);
@@ -19,7 +19,7 @@ class AuthController extends Controller
 
     public function register()
     {
-        return view('auth.register.index', [
+        return view('form.auth.register', [
             'title' => 'Register',
             'active' => 'register'
         ]);
