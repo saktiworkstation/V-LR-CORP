@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\ExperienceController;
-use App\Http\Controllers\HomeControler;
-use App\Models\Experience;
 use App\Models\Message;
 use App\Models\Project;
+use App\Models\Experience;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeControler;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ExperienceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeControler::class, 'index']);
+
+Route::get('/login', [AuthController::class, 'login'])->name('login')->middleware('guest');
+Route::post('/login', [AuthController::class, 'authenticate']);
+Route::post('/logout', [AuthController::class, 'logout']);
+
+Route::get('/register', [AuthController::class, 'register'])->middleware('guest');
+Route::post('/register', [AuthController::class, 'store']);
 
 Route::any('/dashboard', function () {
     return view('dashboard', [

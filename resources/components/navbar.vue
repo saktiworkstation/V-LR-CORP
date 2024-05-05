@@ -1,11 +1,11 @@
 <script>
-    import '../css/navbar.css'; 
+    import '../css/navbar.css';
 
     export default{
         name: 'navbar',
         data(){
             return{
-                
+                //
             }
         }
     }
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg custom-navbar" aria-label="Offcanvas navbar large">
         <div class="container">
         <a class="navbar-brand me-auto" href="#">V-LR CORP</a>
-        
+
         <div class="offcanvas offcanvas-start text-bg-light" tabindex="-2" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
             <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar2Label">V-LR CORP</h5>
@@ -27,7 +27,7 @@
                 <li class="nav-item nav-item-custom">
                     <a class="nav-link active-custom nav-link-custom" aria-current="page" href="#header">Home</a>
                 </li>
-                
+
                 <li class="nav-item nav-item-custom">
                     <a class="nav-link nav-link-custom" href="#about">About</a>
                 </li>
