@@ -75,4 +75,21 @@ class AuthController extends Controller
 
         return redirect('/');
     }
+
+    public function destroy($id)
+    {
+        User::destroy($id);
+        return redirect('/dashboard')->with('success', 'User has been deleted!');
+    }
+
+    public function edit(Request $request, $id){
+        $rules = [
+            'name' => 'required|max:255',
+        ];
+
+        $validatedData = $request->validate($rules);
+
+        User::where('id', $id)->update($validatedData);
+        return redirect('/dashboard')->with('success', 'User Data changed successfully!');
+    }
 }
