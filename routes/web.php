@@ -34,7 +34,7 @@ Route::any('/dashboard', function () {
         'experiences' => Experience::orderBy('order', 'asc')->get(),
         'projects' => Project::all(),
     ]);
-});
+})->middleware('auth');
 
-Route::get('/dashboard/form/experience/create', [ExperienceController::class, 'create']);
-Route::post('/dashboard/form/experience/create', [ExperienceController::class, 'store']);
+Route::get('/dashboard/form/experience/create', [ExperienceController::class, 'create'])->middleware('auth');
+Route::post('/dashboard/form/experience/create', [ExperienceController::class, 'store'])->middleware('auth');
