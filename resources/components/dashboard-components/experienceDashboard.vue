@@ -11,8 +11,10 @@
                             </fa></a>
                         <!-- <button @click="isAddExperienceModalOpen = true" class="btn btn-success me-3">Add Experience <fa class="ms-2" :icon="['fas', 'plus']">
                             </fa></button> -->
-                        <button @click="isAddProjectModalOpen = true" class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
-                        </button>
+                        <a href="/dashboard/form/experience/create" class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
+                        </a>
+                        <!-- <button @click="isAddProjectModalOpen = true" class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
+                        </button> -->
                     </div>
                 </div>
             </div>
