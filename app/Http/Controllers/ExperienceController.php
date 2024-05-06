@@ -43,6 +43,6 @@ class ExperienceController extends Controller
     public function destroy($id)
     {
         Experience::destroy($id);
-        return redirect('/dashboard')->with('success', 'User has been deleted!');
+        return redirect('/dashboard')->with('success', 'Experience has been deleted!');
     }
 }
