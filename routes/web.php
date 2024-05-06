@@ -43,3 +43,4 @@ Route::any('/dashboard', function () {
 
 Route::get('/dashboard/form/experience/create', [ExperienceController::class, 'create'])->middleware('auth');
 Route::post('/dashboard/form/experience/create', [ExperienceController::class, 'store'])->middleware('auth');
+Route::delete('/dashboard/experience/delete/{id}', [ExperienceController::class, 'destroy'])->middleware('auth');
