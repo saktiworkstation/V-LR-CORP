@@ -40,8 +40,9 @@ class ExperienceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Experience $experience)
+    public function destroy($id)
     {
-        //
+        Experience::destroy($id);
+        return redirect('/dashboard')->with('success', 'User has been deleted!');
     }
 }
