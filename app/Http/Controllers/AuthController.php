@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function login()
     {
-        return view('auth.login.index', [
+        return view('form.auth.login', [
             'title' => 'Login',
             'active' => 'login'
         ]);
@@ -19,7 +19,7 @@ class AuthController extends Controller
 
     public function register()
     {
-        return view('auth.register.index', [
+        return view('form.auth.register', [
             'title' => 'Register',
             'active' => 'register'
         ]);
@@ -74,5 +74,22 @@ class AuthController extends Controller
         request()->session()->regenerateToken();
 
         return redirect('/');
+    }
+
+    public function destroy($id)
+    {
+        User::destroy($id);
+        return redirect('/dashboard')->with('success', 'User has been deleted!');
+    }
+
+    public function edit(Request $request, $id){
+        $rules = [
+            'name' => 'required|max:255',
+        ];
+
+        $validatedData = $request->validate($rules);
+
+        User::where('id', $id)->update($validatedData);
+        return redirect('/dashboard')->with('success', 'User Data changed successfully!');
     }
 }

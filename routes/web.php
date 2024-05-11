@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\ExperienceController;
-use App\Http\Controllers\HomeControler;
-use App\Models\Experience;
 use App\Models\Message;
 use App\Models\Project;
+use App\Models\Experience;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeControler;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ExperienceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,13 +21,26 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeControler::class, 'index']);
 
+Route::get('/login', [AuthController::class, 'login'])->name('login')->middleware('guest');
+Route::post('/login', [AuthController::class, 'authenticate']);
+Route::post('/logout', [AuthController::class, 'logout']);
+
+Route::get('/register', [AuthController::class, 'register'])->middleware('guest');
+Route::post('/register', [AuthController::class, 'store']);
+
+// destroy user data
+Route::delete('/auth/{id}/delete', [AuthController::class, 'destroy'])->middleware('auth');
+// edit user data
+Route::put('/auth/{id}/edit', [AuthController::class, 'edit'])->middleware('auth');
+
 Route::any('/dashboard', function () {
     return view('dashboard', [
         'messages' => Message::all(),
         'experiences' => Experience::orderBy('order', 'asc')->get(),
         'projects' => Project::all(),
     ]);
-});
+})->middleware('auth');
 
-Route::get('/dashboard/form/experience/create', [ExperienceController::class, 'create']);
-Route::post('/dashboard/form/experience/create', [ExperienceController::class, 'store']);
+Route::get('/dashboard/form/experience/create', [ExperienceController::class, 'create'])->middleware('auth');
+Route::post('/dashboard/form/experience/create', [ExperienceController::class, 'store'])->middleware('auth');
+Route::delete('/dashboard/experience/delete/{id}', [ExperienceController::class, 'destroy'])->middleware('auth');

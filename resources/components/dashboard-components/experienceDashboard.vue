@@ -11,8 +11,10 @@
                             </fa></a>
                         <!-- <button @click="isAddExperienceModalOpen = true" class="btn btn-success me-3">Add Experience <fa class="ms-2" :icon="['fas', 'plus']">
                             </fa></button> -->
-                        <button @click="isAddProjectModalOpen = true" class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
-                        </button>
+                        <a href="/dashboard/form/experience/create" class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
+                        </a>
+                        <!-- <button @click="isAddProjectModalOpen = true" class="btn btn-success me-3">Add Project <fa class="ms-2" :icon="['fas', 'plus']"></fa>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -43,8 +45,8 @@
                                         <td>{{ experience.order }}</td>
                                         <td><button @click="isEditExperienceModalOpen = true" class="btn btn-table btn-success me-3 mb-2">Edit <fa class="ms-2"
                                                     :icon="['fas', 'pen-to-square']"></fa></button>
-                                            <button class="btn btn-table btn-danger">Delete <fa class="ms-2"
-                                                    :icon="['fas', 'trash']"></fa></button>
+                                            <a :href="`/dashboard/experiences/delete/${experience.id}`" class="btn btn-table btn-danger">Delete <fa class="ms-2"
+                                                    :icon="['fas', 'trash']"></fa></a>
                                         </td>
                                         <!-- <td><button class="btn btn-primary" @click="showProject()">Show</button></td> -->
                                     </tr>
