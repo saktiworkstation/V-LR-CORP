@@ -13,15 +13,65 @@ export default {
 
 </script>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:ital,wght@0,100;0,300;0,600;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.h1-footer, .p-footer, .btn-footer{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+.h1-footer{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.p-footer{
+    margin: 10px auto;
+    margin-bottom: 20px;
+
+}
+
+.footer-custom{
+    margin: 50px 0 0 0;
+}
+
+.row-text{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.btn-footer{
+    width: 200px;
+    height: 30px;
+}
+
+
+
+</style>
+
 <template>
-<div class="container-fluid p-0 id=Footer">
-  <div class="footer-custom">
+<div class="container id=Footer">
+  <div class="footer-custom" >
     <footer class="py-5  ">
-    <div class="row row-text">
-        <h1 class="h1-footer">Ready to <span> Build <br> Awesome </span> project? </h1>
-        <p class="p-footer">Memulai sebuah projek dengan riset <br> dan memvalidasi  
-           ideas dengan usability-testing agar maksimal.</p>
-        <button class="btn btn-footer btn-primary">Hire Me Now</button>
+    <div class="row mb-5">
+        <div class="col-12">
+            <h1 class="h1-footer">Ready to <span> Build <br> Awesome </span> project? </h1>
+            <p class="p-footer">Memulai sebuah projek dengan riset <br> dan memvalidasi  
+                ideas dengan usability-testing agar maksimal.</p>
+        </div>
+        <button class="btn btn-primary mt-3">Hire Me Now</button>
     </div>
     <div class="container">
       <div class="row">
@@ -89,10 +139,5 @@ export default {
                 </div>
             </footer>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="wave" viewBox="0 0 1440 320">
-            <path fill="#281aef" fill-opacity="1"
-                d="M0,128L48,128C96,128,192,128,288,154.7C384,181,480,235,576,213.3C672,192,768,96,864,80C960,64,1056,128,1152,133.3C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
     </div>
 </template>

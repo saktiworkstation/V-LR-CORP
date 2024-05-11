@@ -530,6 +530,66 @@
     </div>
 </template>
 
+<style>
+
+/* Anda mungkin perlu menambahkan beberapa CSS untuk styling modal Anda */
+.modal {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 50px;
+}
+
+.modal-dialog {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input:focus{
+  outline: none !important;
+  border: none !important;
+}
+
+.btn-table{
+    width: 100px;
+    height: auto;
+}
+
+.th-custom{
+    width: 250px;
+}
+
+.th-img{
+    width: 200px;
+}
+
+.img-table{
+    max-width: 220px;
+    max-height: 220px;
+}
+</style>
+
 <script>
 import "../../css/table.css";
 import 'bootstrap/dist/css/bootstrap.css'
